@@ -39,8 +39,9 @@ jpeg-decoder = { version = "0.3", default_features = false }
 png = { version = "0.17" }
 tiny_http = "0.12"
 
-[build-dependencies]
-auto_generate_cdp = "0.4.0"
+[build-dependencies.auto_generate_cdp] 
+git = "https://github.com/cyqsimon/auto_generate_cdp.git"
+branch = "proxy"
 
 [lib]
 name = "headless_chrome"
